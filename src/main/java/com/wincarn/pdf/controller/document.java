@@ -1,6 +1,6 @@
 package com.wincarn.pdf.controller;
 
-import javax.annotation.Resource;
+
 
 /**
  * @ProjectName:
@@ -15,8 +15,6 @@ import javax.annotation.Resource;
 public class document {
 
 
-    @Resource
-    private DocumentConverter documentConverter;
 
 
 }
