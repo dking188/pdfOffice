@@ -50,7 +50,7 @@ public class UploadController {
         }
 
         String fileName = file.getOriginalFilename();
-        String filePath = "/Users/energy/workspace/pdf/temp/";
+        String filePath = "/tmp/file/";
         File dest = new File(filePath + fileName);
         try {
             file.transferTo(dest);
@@ -71,7 +71,7 @@ public class UploadController {
     @ResponseBody
     public String multiUpload(HttpServletRequest request) {
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
-        String filePath = "/Users/energy/workspace/pdf/temp/";
+        String filePath = "/tmp/file/";
         for (int i = 0; i < files.size(); i++) {
             MultipartFile file = files.get(i);
             if (file.isEmpty()) {
